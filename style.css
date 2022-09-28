@@ -177,7 +177,7 @@ h2 {
     font-family: 'Play', sans-serif;
     font-size: 18px;
 
-    color: #ffffff;
+    color: #cecece;
 
     text-align: center;
 
@@ -216,7 +216,7 @@ h2 {
     padding: 15px;
 
     border: none;
-    color: #ffffff;
+    color: #cecece;
 
     cursor: pointer;
     display: flex;
@@ -229,7 +229,7 @@ h2 {
     margin: 0 auto -2px;
     height: 2px;
     width: 100%;
-    background-color: white;
+    background-color: #cecece;
 }
 
 .direction_table {
@@ -243,18 +243,18 @@ h2 {
     font-family: 'Play', sans-serif;
     font-size: 17px;
 
-    color: #ffffff;
+    color: #cecece;
 }
 
 /* team */
 
 .text1 {
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-family: 'Play', sans-serif;
     font-size: 20px;
 
-    color: #ffffff;
+    color: #cecece;
 
     width: 100%;
     text-align: center;
@@ -288,16 +288,18 @@ h2 {
 
 .member_name {
     font-family: 'Play', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     
-    color: #ffffff;
+    color: #cecece;
 }
 
 .member_description p {
+    margin-bottom: 0;
+    line-height: 20px;
     font-family: 'Play', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
 
-    color: #ffffff;
+    color: #cecece;
 }
 
 /* shedule */
@@ -308,7 +310,7 @@ h2 {
     font-family: 'Play', sans-serif;
     font-size: 20px;
 
-    color: #ffffff;
+    color: #cecece;
 
     width: 100%;
     text-align: center;
