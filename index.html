@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+
+<head>
+    <title>Спортивний клуб нового формату &bull; Healthy Club</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
+
+    <script src="https://kit.fontawesome.com/225277b5de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--напрямки, розклад, наша команда, контакти-->
+
+    <div class="container">
+        <div class="top">
+            <div class="healty-club-image_container">
+                <img class="healty-club-image" src="images/boardMontazhnaya-oblast-1.svg">
+            </div>
+
+            <div class="margin"></div>
+
+            <div class="path_buttons">
+                <div class="path_buttons path_button_container">
+                    <a class="path_buttons directions_button path_button">
+                        <span>
+                            напрямки
+                        </span>
+                    </a>
+                </div>
+
+                <div class="path_buttons path_button_container">
+                    <a class="path_buttons timetable_button path_button">
+                        <span>
+                            розклад
+                        </span>
+                    </a>
+                </div>
+
+                <div class="path_buttons path_button_container">
+                    <a class="path_buttons our_team_button path_button">
+                        <span>
+                            команда
+                        </span>
+                    </a>
+                </div>
+
+                <div class="path_buttons path_button_container">
+                    <a class="path_buttons contacts_button path_button">
+                        <span>
+                            контакти
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="link_buttons">
+                <div class="link_buttons link_button_container">
+                    <div class="link_buttons link_button">
+                        <a class='fab instagram' href="https://www.instagram.com/instahealthyclub/"
+                            target="_blank">&#xf16d;</a>
+                    </div>
+                </div>
+
+                <div class="link_buttons link_button_container">
+                    <div class="link_buttons link_button">
+                        <a class='fab facebook' href="https://www.facebook.com/healthyclubfit"
+                            target="_blank">&#xf09a;</a>
+                    </div>
+                </div>
+
+                <div class="link_buttons link_button_container">
+                    <div class="link_buttons link_button">
+                        <a class='fab youtube' href="https://www.youtube.com/channel/UCEQI-gn-7favlDass1k-Maw"
+                            target="_blank">&#xf167;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <div class="carousel">
+                    <div><img src="images/photo_2022-09-24_10-11-40.jpg"></div>
+                    <div><img src="images/photo_2022-09-24_10-12-08.jpg"></div>
+                    <div><img src="images/photo_2022-09-25_19-20-59.jpg"></div>
+                    <div><img src="images/photo_2022-09-25_20-42-32.jpg"></div>
+                    <div><img src="images/photo_2022-09-25_20-43-13.jpg"></div>
+                </div>
+            </div>
+
+            <div class="greeting">
+                <div class="greeting1">
+                    <span>
+                        Ласкаво просимо вас у HealthyClub!
+                    </span>
+                </div>
+
+                <span>
+                    В нашому клубі проводяться індивідуальні та групові заняття з наступних нарямків:
+                </span>
+            </div>
+
+            <div class="directions">
+                <div class="directions_container">
+                    <div class="directions_buttons"></div>
+                    <div class="direction_table"></div>
+                </div>
+            </div>
+
+            <div class="text1">НАША КОМАНДА</div>
+            <div class="team">
+                <div class="team_container"></div>
+            </div>
+
+            <div class="text2">РОЗКЛАД</div>
+            <div class="shedule"></div>
+            <div class="contacts">
+                <div class="contacts c">
+                    <span>
+                        Адміністратор
+                    </span>
+
+                    <span>
+                        098 458 2808
+                    </span>
+
+                    <span>
+                        Viber
+                    </span>
+
+                    <span>
+                        Telegram
+                    </span>
+                </div>
+
+                <div class="contacts c">
+                    <span>
+                        Адреса
+                    </span>
+
+                    <span>
+                        Києво-Святошинський район,
+                    </span>
+
+                    <span>
+                        с.Хотів
+                    </span>
+
+                    <span>
+                        вул. Партизанська, 1а
+                    </span>
+                </div>
+
+                <div class="contacts c">
+                    <span>
+                        Розклад роботи залу
+                    </span>
+
+                    <span>
+                        Понедiлок – П’ятниця
+                    </span>
+
+                    <span>
+                        07:30 – 21:00
+                    </span>
+
+                    <span>
+                        Субота
+                    </span>
+
+                    <span>
+                        08:00 – 21:00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick({
+                slidesToShow: 1, 
+                centerMode: true, 
+                variableWidth: true,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+
+        /*$(document).on('click', '.joga', function (event) {
+            console.log(healthyclub);
+            for (var i = 0; i < healthyclub.branches.length; i++) {
+                if (healthyclub.branches[i].id === 'joga') {
+                    var text = healthyclub.branches[i].text.split('\n')
+                    var html = '';
+
+                    for (var a = 0; a < text.length; a++) {
+                        html += `<p>${text[a]}</p>`;
+                    }
+
+                    $('.direction_table').html(`${html}`);
+                }
+            }
+        });
+
+        $(document).on('click', '.trx', function (event) {
+            console.log(healthyclub);
+            for (var i = 0; i < healthyclub.branches.length; i++) {
+                if (healthyclub.branches[i].id === 'trx') {
+                    var text = healthyclub.branches[i].text.split('\n')
+                    var html = '';
+
+                    for (var a = 0; a < text.length; a++) {
+                        html += `<p>${text[a]}</p>`;
+                    }
+
+                    $('.direction_table').html(`${html}`);
+                }
+            }
+        });
+
+        $(document).on('click', '.dorano', function (event) {
+            console.log(healthyclub);
+            for (var i = 0; i < healthyclub.branches.length; i++) {
+                if (healthyclub.branches[i].id === 'dorano') {
+                    var text = healthyclub.branches[i].text.split('\n')
+                    var html = '';
+
+                    for (var a = 0; a < text.length; a++) {
+                        html += `<p>${text[a]}</p>`;
+                    }
+
+                    $('.direction_table').html(`${html}`);
+                }
+            }
+        });
+
+        $(document).on('click', '.fizo', function (event) {
+            console.log(healthyclub);
+            for (var i = 0; i < healthyclub.branches.length; i++) {
+                if (healthyclub.branches[i].id === 'fizo') {
+                    var text = healthyclub.branches[i].text.split('\n')
+                    var html = '';
+
+                    for (var a = 0; a < text.length; a++) {
+                        html += `<p>${text[a]}</p>`;
+                    }
+
+                    $('.direction_table').html(`${html}`);
+                }
+            }
+        });*/
+
+        const show = (txt) => {
+            return (e) => {
+                console.log(txt);
+                console.log(e);
+
+                var text = txt.split('\n');
+                var html = '';
+
+                for (var a = 0; a < text.length; a++) {
+                    html += `<p>${text[a]}</p>`;
+                }
+
+                document.querySelector('.direction_table').style.display = 'block';
+                document.querySelector('.direction_table').innerHTML = html;
+            }
+        }
+
+        var healthyclub = {};
+
+        fetch("https://translate-3dcoat.herokuapp.com/healthyclubshedule").then(r => r.text().then(
+            t => {
+                try {
+                    healthyclub = JSON.parse(t);
+                    var tab = document.querySelector(".shedule");
+                    if (tab) {
+                        while (tab.firstChild) {
+                            tab.firstChild.remove();
+                        }
+                        tbl = document.createElement('table');
+                        tbl.id = "demo";
+                        var days = ['', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'];
+                        const tr = tbl.insertRow();
+                        for (var i = 0; i < 8; i++) {
+                            const td = tr.insertCell();
+                            var bb = document.createElement('b');
+                            bb.appendChild(document.createTextNode(days[i]));
+                            td.appendChild(bb);
+                        }
+                        for (let i = 0; i < healthyclub.shedule.length; i++) {
+                            var h = healthyclub.shedule[i];
+                            const tr = tbl.insertRow();
+                            if (i % 2 === 0) tr.style['background-color'] = 'rgba(0.5, 0.5, 0.5, 0.05)';
+                            const td = tr.insertCell();
+                            td.appendChild(document.createTextNode(h.time));
+                            td.style.width = '10%';
+                            for (var j = 0; j < 7; j++) {
+                                const td = tr.insertCell();
+                                var d = h.days[j];
+                                if (d.length === 0) d = '-';
+                                td.appendChild(document.createTextNode(d));
+                            }
+                        }
+                        tab.appendChild(tbl);
+                    }
+
+                    console.log(healthyclub);
+
+                    for (var i = 0; i < healthyclub.branches.length; i++) {
+                        var button = document.createElement('div');
+                        button.className = `direction_button ${healthyclub.branches[i].id}`;
+                        button.innerHTML = `
+                            <a>
+                                <span>
+                                    ${healthyclub.branches[i].branch}
+                                </span>
+                            </a>
+                        `;
+
+                        button.addEventListener('click', show(healthyclub.branches[i].text));
+
+                        document.querySelector('.directions_buttons').appendChild(button);
+                    }
+
+                    for (var i = 0; i < healthyclub.team.length; i++) {
+                        if (healthyclub.team[i].text) {
+                            var member = document.createElement('div');
+                            member.className = `member ${healthyclub.team[i].id}`;
+
+                            var name = document.createElement('div');
+                            name.className = 'member_name';
+                            name.innerHTML = `${healthyclub.team[i].teacher}`;
+
+                            var text = document.createElement('div');
+                            text.className = 'member_description';
+
+                            var txt = healthyclub.team[i].text.split('\n');
+                            var html = '';
+
+                            console.log(txt);
+
+                            for (var a = 0; a < txt.length; a++) {
+                                console.log(txt[i]);
+                                if (txt[i]) html += `<p>${txt[i]}</p>`;
+                            }
+
+                            if (html) text.innerHTML = html;
+
+                            member.appendChild(name);
+                            member.appendChild(text);
+                            document.querySelector('.team_container').appendChild(member);
+                        }
+                    }
+                } catch {
+                    console.log("Unable to parse the response:", t);
+                }
+            }
+        ));
+
+        document.querySelector('.contacts_button').addEventListener('click', (event) => {
+            document.querySelector('.contacts').scrollIntoView({
+                block: "center", 
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.timetable_button').addEventListener('click', (event) => {
+            document.querySelector('.shedule').scrollIntoView({
+                block: "center", 
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.path_button').addEventListener('click', (event) => {
+            document.querySelector('.directions').scrollIntoView({
+                block: "center", 
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>

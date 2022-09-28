@@ -1,0 +1,363 @@
+body, html {
+    margin: 0;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    position: absolute;
+
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,1);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,1);
+
+    background-color: #52555a;
+    width: 100%;
+
+    z-index: 995;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom {
+    width: 100%;
+    line-height: 100%;
+    background-color: #4b4d52;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin {
+    flex: 1;
+}
+
+/* top */
+
+/* healty-club-image */
+
+.healty-club-image_container {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.healty-club-image {
+    width: 80px;
+}
+
+/* path_buttons */
+
+.path_buttons {
+    display: flex;
+}
+
+.path_button_container {
+    margin: 5px;
+}
+
+.path_button {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 15px;
+
+    border: none;
+    background-color: #52555a;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.path_button:hover ::after {
+    display: block;
+    content: '';
+    margin: 0 auto -2px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+/* link_buttons */
+
+.link_buttons {
+    display: flex;
+}
+
+.link_button_container {
+    margin: 10px;
+    display: flex;
+}
+
+.link_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    text-decoration: none;
+    cursor: pointer;
+    font-size:18px;
+    color: white;
+}
+
+.facebook {
+    text-decoration: none;
+    cursor: pointer;
+    font-size:18px;
+    color: white;
+}
+
+.youtube {
+    text-decoration: none;
+    cursor: pointer;
+    font-size:18px;
+    color: white;
+}
+
+/* bottom */
+
+/* slides */
+
+.wrapper {
+    margin-top: 60px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide div {
+    overflow: hidden;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 500px;
+
+    border: 2px solid #fff;
+}
+
+.wrapper .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+}
+
+/* greeting */
+
+.greeting {
+    width: 100%;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+/* directions */
+
+.directions {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.directions_container {
+    width: 1200px;
+}
+
+.directions_buttons {
+    display: flex;
+}
+
+.direction_button {
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+
+    padding: 15px;
+
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.direction_button:hover ::after {
+    display: block;
+    content: '';
+    margin: 0 auto -2px;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.direction_table {
+    display: none;
+
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.75);
+
+    padding: 15px;
+    font-family: 'Play', sans-serif;
+    font-size: 17px;
+
+    color: #ffffff;
+}
+
+/* team */
+
+.text1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+
+    color: #ffffff;
+
+    width: 100%;
+    text-align: center;
+}
+
+.team {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.team_container {
+    width: 1200px;
+}
+
+.member {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.75);
+
+    padding: 15px;
+    margin-top: 5px;
+}
+
+.member:hover {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.75);
+}
+
+.member_name {
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    
+    color: #ffffff;
+}
+
+.member_description p {
+    font-family: 'Play', sans-serif;
+    font-size: 13px;
+
+    color: #ffffff;
+}
+
+/* shedule */
+
+.text2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+
+    color: #ffffff;
+
+    width: 100%;
+    text-align: center;
+}
+
+.shedule {
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#demo tbody tr {
+    width: 50px;
+    height: 50px;
+}
+
+#demo tbody tr td {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+
+    text-align: center;
+    color: #cecece;
+}
+
+/* contacts */
+
+.contacts {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+
+    display: flex;
+}
+
+.contacts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.contacts div span {
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    margin: 10px;
+    color: #cecece;
+}
