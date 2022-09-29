@@ -100,7 +100,7 @@
             <div class="greeting">
                 <div class="greeting1">
                     <span>
-                        Ласкаво просимо вас у HealthyClub!
+                        Ласкаво просимо вас у <span style="color: rgb(95, 196, 95);">Healthy</span><span style="color: rgb(117 90 147);">Club</span>!
                     </span>
                 </div>
 
@@ -262,9 +262,29 @@
         });*/
 
         const show = (branch) => {
-            return (e) => {
-                console.log(branch);
-                console.log(e);
+            return (event) => {
+                for (var i = 0; i < document.querySelector('.directions_buttons').childNodes.length; i++) {
+                    document.querySelector('.directions_buttons').childNodes[i].childNodes[1].childNodes[1].style.borderBottom = '';
+                }
+
+                var number = null;
+
+                for (var i = 0; i < event.path.length; i++) {
+                    if (event.path[i].classList) {
+                        if (event.path[i].classList[1] === branch.id) {
+                            number = i;
+                        }
+                    }
+                }
+
+                console.log(i);
+
+                for (var i = 0; i < document.querySelector('.directions_buttons').childNodes.length; i++) {
+                    if (document.querySelector('.directions_buttons').childNodes[i].classList[1] === event.path[number].classList[1]) {
+                        document.querySelector('.directions_buttons').childNodes[i].childNodes[1].childNodes[1].style.borderBottom = '2px solid #fff';
+                        console.log(document.querySelector('.directions_buttons').childNodes[i].style);
+                    }
+                }
 
                 var text = branch.text.split('\n');
                 var html = document.createElement('div');
@@ -410,6 +430,13 @@
                 behavior: 'smooth'
             });
         });
+
+        document.querySelector('.our_team_button').addEventListener('click', (event) => {
+            document.querySelector('.team').scrollIntoView({
+                block: "center", 
+                behavior: 'smooth'
+            });
+        })
     </script>
 </body>
 
