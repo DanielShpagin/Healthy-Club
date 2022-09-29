@@ -159,28 +159,6 @@
                         вул. Партизанська, 1а
                     </span>
                 </div>
-
-                <div class="contacts c">
-                    <span>
-                        Розклад роботи залу
-                    </span>
-
-                    <span>
-                        Понедiлок – П’ятниця
-                    </span>
-
-                    <span>
-                        07:30 – 21:00
-                    </span>
-
-                    <span>
-                        Субота
-                    </span>
-
-                    <span>
-                        08:00 – 21:00
-                    </span>
-                </div>
             </div>
         </div>
     </div>
@@ -363,9 +341,10 @@
                         `;
 
                         button.addEventListener('click', show(healthyclub.branches[i]));
-
                         document.querySelector('.directions_buttons').appendChild(button);
                     }
+
+                    document.querySelector(`.${healthyclub.branches[0].id}`).click();
 
                     for (var i = 0; i < healthyclub.team.length; i++) {
                         if (healthyclub.team[i].text) {
