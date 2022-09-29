@@ -11,7 +11,7 @@ body, html {
 }
 
 .top {
-    position: absolute;
+    position: fixed;
 
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,1);
@@ -194,6 +194,19 @@ h2 {
 
 /* directions */
 
+.branch_img {
+    height: 200px;
+}
+
+.branch_container {
+    margin-left: 15px;
+}
+
+.branch_description p {
+    margin: 0;
+    line-height: 25px;
+}
+
 .directions {
     width: 100%;
 
@@ -271,6 +284,10 @@ h2 {
     width: 1200px;
 }
 
+.member_container {
+    margin-left: 15px;
+}
+
 .member {
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
@@ -278,6 +295,8 @@ h2 {
 
     padding: 15px;
     margin-top: 5px;
+
+    display: flex;
 }
 
 .member:hover {
@@ -295,11 +314,15 @@ h2 {
 
 .member_description p {
     margin-bottom: 0;
-    line-height: 20px;
+    line-height: 25px;
     font-family: 'Play', sans-serif;
     font-size: 18px;
 
     color: #cecece;
+}
+
+.member_image {
+    height: 200px;
 }
 
 /* shedule */
