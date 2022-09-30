@@ -77,13 +77,6 @@
                             target="_blank">&#xf09a;</a>
                     </div>
                 </div>
-
-                <div class="link_buttons link_button_container">
-                    <div class="link_buttons link_button">
-                        <a class='fab youtube' href="https://www.youtube.com/channel/UCEQI-gn-7favlDass1k-Maw"
-                            target="_blank">&#xf167;</a>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="bottom">
@@ -100,7 +93,7 @@
             <div class="greeting">
                 <div class="greeting1">
                     <span>
-                        Ласкаво просимо вас у <span style="color: rgb(95, 196, 95);">Healthy</span><span style="color: rgb(150 111 194);    ">Club</span>!
+                        Ласкаво просимо вас у <span style="color: rgb(95, 196, 95);">Healthy</span><span style="color: rgb(150 111 194);">Club</span>!
                     </span>
                 </div>
 
@@ -181,70 +174,6 @@
                 autoplaySpeed: 3000
             });
         });
-
-        /*$(document).on('click', '.joga', function (event) {
-            console.log(healthyclub);
-            for (var i = 0; i < healthyclub.branches.length; i++) {
-                if (healthyclub.branches[i].id === 'joga') {
-                    var text = healthyclub.branches[i].text.split('\n')
-                    var html = '';
-
-                    for (var a = 0; a < text.length; a++) {
-                        html += `<p>${text[a]}</p>`;
-                    }
-
-                    $('.direction_table').html(`${html}`);
-                }
-            }
-        });
-
-        $(document).on('click', '.trx', function (event) {
-            console.log(healthyclub);
-            for (var i = 0; i < healthyclub.branches.length; i++) {
-                if (healthyclub.branches[i].id === 'trx') {
-                    var text = healthyclub.branches[i].text.split('\n')
-                    var html = '';
-
-                    for (var a = 0; a < text.length; a++) {
-                        html += `<p>${text[a]}</p>`;
-                    }
-
-                    $('.direction_table').html(`${html}`);
-                }
-            }
-        });
-
-        $(document).on('click', '.dorano', function (event) {
-            console.log(healthyclub);
-            for (var i = 0; i < healthyclub.branches.length; i++) {
-                if (healthyclub.branches[i].id === 'dorano') {
-                    var text = healthyclub.branches[i].text.split('\n')
-                    var html = '';
-
-                    for (var a = 0; a < text.length; a++) {
-                        html += `<p>${text[a]}</p>`;
-                    }
-
-                    $('.direction_table').html(`${html}`);
-                }
-            }
-        });
-
-        $(document).on('click', '.fizo', function (event) {
-            console.log(healthyclub);
-            for (var i = 0; i < healthyclub.branches.length; i++) {
-                if (healthyclub.branches[i].id === 'fizo') {
-                    var text = healthyclub.branches[i].text.split('\n')
-                    var html = '';
-
-                    for (var a = 0; a < text.length; a++) {
-                        html += `<p>${text[a]}</p>`;
-                    }
-
-                    $('.direction_table').html(`${html}`);
-                }
-            }
-        });*/
 
         const show = (branch) => {
             return (event) => {
@@ -373,7 +302,7 @@
                             var html = '';
 
                             for (var a = 0; a < txt.length; a++) {
-                                if (txt[i]) html += `<p>${txt[i]}</p>`;
+                                if (txt[a]) html += `<p>${txt[a]}</p>`;
                             }
 
                             if (html) text.innerHTML = html;
