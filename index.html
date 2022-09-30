@@ -175,6 +175,35 @@
             });
         });
 
+        function resize() {
+            var height = window.outerHeight;
+            var width = window.outerWidth;
+
+            if (height > width) {
+                console.log(height, width);
+                document.querySelector('.top').style.height = '80px';
+
+                console.log(document.getElementsByClassName('path_button'));
+
+                for (var i = 0; i < document.getElementsByClassName('path_button').length; i++) {
+                    document.getElementsByClassName('path_button')[i].style.fontSize = '18px';
+                }
+
+                document.querySelector('.healty-club-image_container').style.height = '100%';
+            } else {
+                document.querySelector('.top').style.height = '60px';
+                for (var i = 0; i < document.getElementsByClassName('path_button').length; i++) {
+                    document.getElementsByClassName('path_button')[i].style.fontSize = '16px';
+                }
+
+                document.querySelector('.healty-club-image_container').style.height = '60px';
+            }
+        }
+
+        resize();
+
+        window.onresize = resize;
+
         const show = (branch) => {
             return (event) => {
                 for (var i = 0; i < document.querySelector('.directions_buttons').childNodes.length; i++) {
