@@ -160,6 +160,14 @@
                     </span>
                 </div>
             </div>
+
+            <div class="who-created_container">
+                <div class="text">
+                    <span>
+                        Вебсайт розробив <a href="https://github.com/DanielShpagin" target="_blank">Данило Шпагін</a>.
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -180,10 +188,7 @@
             var width = window.outerWidth;
 
             if (height > width) {
-                console.log(height, width);
                 document.querySelector('.top').style.height = '80px';
-
-                console.log(document.getElementsByClassName('path_button'));
 
                 for (var i = 0; i < document.getElementsByClassName('path_button').length; i++) {
                     document.getElementsByClassName('path_button')[i].style.fontSize = '18px';
@@ -199,8 +204,6 @@
                 document.querySelector('.healty-club-image_container').style.height = '60px';
             }
         }
-
-        resize();
 
         window.onresize = resize;
 
@@ -220,12 +223,11 @@
                     }
                 }
 
-                console.log(i);
+                console.log(branch.id);
 
                 for (var i = 0; i < document.querySelector('.directions_buttons').childNodes.length; i++) {
                     if (document.querySelector('.directions_buttons').childNodes[i].classList[1] === event.path[number].classList[1]) {
                         document.querySelector('.directions_buttons').childNodes[i].childNodes[1].childNodes[1].style.borderBottom = '2px solid #fff';
-                        console.log(document.querySelector('.directions_buttons').childNodes[i].style);
                     }
                 }
 
@@ -253,6 +255,15 @@
                 document.querySelector('.direction_table').innerHTML = '';
                 document.querySelector('.direction_table').appendChild(img);
                 document.querySelector('.direction_table').appendChild(branch_container);
+
+                if (window.outerHeight > window.outerWidth && branch.id === 'trx') {
+                    console.log('admin lox');
+                    document.querySelector('.direction_table').style.flexDirection = 'column';  
+                    document.querySelector('.branch_img').style.width = '100%';
+                    document.querySelector('.branch_img').style.height = '500px';
+                } else {
+                    document.querySelector('.direction_table').style.flexDirection = 'row';
+                }
             }
         }
 
@@ -294,6 +305,8 @@
                         tab.appendChild(tbl);
                     }
 
+                    console.log(healthyclub);
+
                     for (var i = 0; i < healthyclub.branches.length; i++) {
                         var button = document.createElement('div');
                         button.className = `direction_button ${healthyclub.branches[i].id}`;
@@ -308,6 +321,8 @@
                         button.addEventListener('click', show(healthyclub.branches[i]));
                         document.querySelector('.directions_buttons').appendChild(button);
                     }
+
+                    resize();
 
                     document.querySelector(`.${healthyclub.branches[0].id}`).click();
 
