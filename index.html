@@ -214,9 +214,11 @@
 
                 var number = null;
 
-                for (var i = 0; i < event.path.length; i++) {
-                    if (event.path[i].classList) {
-                        if (event.path[i].classList[1] === branch.id) {
+                var path = event.composedPath();
+                console.log(path)
+                for (var i = 0; i < path.length; i++) {
+                    if (path[i].classList) {
+                        if (path[i].classList[1] === branch.id) {
                             number = i;
                         }
                     }
@@ -225,7 +227,7 @@
                 console.log(branch.id);
 
                 for (var i = 0; i < document.querySelector('.directions_buttons').childNodes.length; i++) {
-                    if (document.querySelector('.directions_buttons').childNodes[i].classList[1] === event.path[number].classList[1]) {
+                    if (document.querySelector('.directions_buttons').childNodes[i].classList[1] === path[number].classList[1]) {
                         document.querySelector('.directions_buttons').childNodes[i].childNodes[1].childNodes[1].style.borderBottom = '2px solid #fff';
                     }
                 }
